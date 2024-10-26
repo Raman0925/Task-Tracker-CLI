@@ -1,5 +1,5 @@
-const fs = require("fs");
 const { loadTask, saveTask } = require("./fileHandler");
+
 const addTask = (description) => {
   const tasks = loadTask();
   const count = tasks.length > 0 ? tasks.length + 1 : 1;
